@@ -27,9 +27,14 @@ layer_state_t layer_state_set_user(layer_state_t state) {
             rgblight_setrgb(0, 0, 255); // Blue for Layer 1
             break;
         default:
-            rgblight_setrgb(0, 0, 0); // Off for Base Layer 0
+            rgblight_setrgb(5, 5, 5); // Off for Base Layer 0
             break;
     }
     return state;
+}
+
+void keyboard_post_init_user(void) {
+    rgblight_enable_noeeprom();
+    rgblight_setrgb(5, 5, 5);
 }
 
