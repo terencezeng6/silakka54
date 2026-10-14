@@ -1,6 +1,7 @@
 #pragma once
 
 #define HOLD_ON_OTHER_KEY_PRESS
+#define TAPPING_TOGGLE 1
 
 #define WS2812_DI_PIN GP16
 #define SPLIT_LAYER_SYNC_ENABLE
